@@ -1,5 +1,8 @@
 Revision history for Perl extension Apache::ACEProxy.
 
+0.04  Tue Mar 12 20:30:30 JST 2002
+	- fixed bug of multiple headers with the same name
+
 0.03  Tue Sep 18 05:05:04 JST 2001
 	- forgot to update MANIFEST
 

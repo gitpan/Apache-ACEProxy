@@ -2,7 +2,7 @@ package Apache::ACEProxy;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = 0.04;
 
 use Apache::Constants qw(:response);
 use LWP::UserAgent;
@@ -37,7 +37,8 @@ sub proxy_handler {
 
     $r->status($res->code);
     $r->status_line($res->status_line);
-    $res->scan(sub { $r->header_out(@_); });
+    my $table = $r->headers_out;
+    $res->scan(sub { $table->add(@_); });
     $r->send_http_header();
     $r->print($res->content);
 

@@ -29,7 +29,7 @@ Apache::ACEProxy::UTF8_RACE - IDN compatible RACE proxy server
 =head1 DESCRIPTION
 
 Apache::ACEProxy::UTF8_RACE is one of the implementations of
-Apache::ACEProxy. This module encodes UTF88 encoded domain names into
+Apache::ACEProxy. This module encodes UTF8 encoded domain names into
 RACE encoding, specified in C<draft-ietf-idn-race-03.txt>.
 
 RACE encoding is currently tested domain name encoding by some
